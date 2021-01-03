@@ -774,4 +774,18 @@ public class RedisUtil {
     }
 
     //=========BoundListOperations 用法 End============
+
+    //==================================HyperLogLog====================
+
+    public void pfadd(String key, String... values){
+        redisTemplate.opsForHyperLogLog().add(key, values);
+    }
+
+    public Long pfCount(String key){
+       return redisTemplate.opsForHyperLogLog().size(key);
+    }
+
+    public Long pfMerge(String key, String... keys){
+        return redisTemplate.opsForHyperLogLog().union(key, keys);
+    }
 }
