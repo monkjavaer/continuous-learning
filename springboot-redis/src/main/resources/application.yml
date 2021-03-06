@@ -6,10 +6,6 @@ spring:
     password: 111111
     connect-timeout: 50000
 
-# 加密的密钥
-# 测试环境可以采用在配置文件中配置
-# 生产环境建议采用启动参数的形式传入
-# 其他配置参数参考:com.ulisesbocchio.jasyptspringboot.properties.JasyptEncryptorConfigurationProperties
 #jasypt:
 #  encryptor:
 #    password: monkjavaer
