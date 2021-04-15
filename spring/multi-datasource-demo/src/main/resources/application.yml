@@ -1,5 +1,5 @@
 server:
-  port: 8080 # Æô¶¯¶Ë¿Ú
+  port: 8080 # å¯åŠ¨ç«¯å£
 management:
   endpoints:
     web:
@@ -9,15 +9,16 @@ spring:
   output:
     ansi:
       enabled: ALWAYS
-  # Êı¾İÔ´ÅäÖÃ
+  # æ•°æ®æºé…ç½®
   datasource:
-    db1: # Êı¾İÔ´1
+    db1: # æ•°æ®æº1
       jdbc-url: jdbc:mysql://localhost:3306/db1?characterEncoding=utf8&useUnicode=true&useSSL=false&serverTimezone=GMT%2B8
       username: root
       password: root
       driver-class-name: com.mysql.cj.jdbc.Driver
-    db2: # Êı¾İÔ´2
+    db2: # æ•°æ®æº2
       jdbc-url: jdbc:mysql://localhost:3306/db2?characterEncoding=utf8&useUnicode=true&useSSL=false&serverTimezone=GMT%2B8
       username: root
       password: root
       driver-class-name: com.mysql.cj.jdbc.Driver
+
