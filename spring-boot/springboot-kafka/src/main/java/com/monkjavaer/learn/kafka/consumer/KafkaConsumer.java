@@ -30,4 +30,13 @@ public class KafkaConsumer {
         //手动提交偏移量
         ack.acknowledge();
     }
+
+    @KafkaListener(topics = "sendCallbackMsg")
+    public void sendCallbackMsg(String msg, Acknowledgment ack) {
+
+        log.info("==================sendCallbackMsg msg: {} ===================", msg);
+
+        //手动提交偏移量
+        ack.acknowledge();
+    }
 }

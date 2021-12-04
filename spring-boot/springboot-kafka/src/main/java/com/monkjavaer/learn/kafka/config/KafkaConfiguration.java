@@ -20,9 +20,17 @@ public class KafkaConfiguration {
      * @return
      */
     @Bean
-    public NewTopic topic() {
+    public NewTopic topic1() {
         return TopicBuilder.name("topic1")
                 .partitions(10)
+                .replicas(1)
+                .build();
+    }
+
+    @Bean
+    public NewTopic sendCallbackMsg() {
+        return TopicBuilder.name("sendCallbackMsg")
+                .partitions(8)
                 .replicas(1)
                 .build();
     }
