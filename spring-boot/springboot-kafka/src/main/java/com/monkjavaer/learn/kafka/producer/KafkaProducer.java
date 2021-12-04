@@ -17,12 +17,28 @@ public class KafkaProducer {
     @Autowired
     private KafkaTemplate<String, Object> kafkaTemplate;
 
+    /**
+     * 发送消息到已经初始化的topic
+     * @return
+     */
     @GetMapping("/sendMsg")
     private String sendMsg() {
         String msg = "hello kafka !";
-        log.info("=====================send msg : {}========================", msg);
+        log.info("=====================send1 msg : {}========================", msg);
         kafkaTemplate.send("topic1", msg);
         return msg;
     }
 
+
+    /**
+     * 发送消息到不存在的topic
+     * @return
+     */
+    @GetMapping("/sendMsg2")
+    private String sendMsg2() {
+        String msg = "hello kafka !";
+        log.info("=====================send2 msg : {}========================", msg);
+        kafkaTemplate.send("topic2", msg);
+        return msg;
+    }
 }
