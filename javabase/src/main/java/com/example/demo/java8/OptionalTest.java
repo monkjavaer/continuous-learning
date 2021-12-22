@@ -27,12 +27,18 @@ public class OptionalTest {
         Optional<People> optional2 = Optional.ofNullable(people2);
 
         //获取Optional对象值 ,Optional get() 值为空时会抛出空指针，
-        System.out.println(optional2.get());
+//        System.out.println(optional2.get());
 
 
         String name1 = Optional.ofNullable(people2.getName().getLastName()).orElse(createLastName());
         String name2 = Optional.ofNullable(people2.getName().getLastName()).orElseGet(() -> createLastName());
 
+        String namenull = Optional.ofNullable(people2)
+                .map(People::getName)
+                .map(Name::getLastName)
+                .orElseGet(OptionalTest::createLastName);
+
+        System.out.println(namenull);
         String name3 = Optional.ofNullable(people2.getName().getFirstName()).orElse(createFirstName());
         String name4 = Optional.ofNullable(people2.getName().getFirstName()).orElseGet(() -> createFirstName());
     }
