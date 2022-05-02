@@ -1,9 +1,9 @@
-package com.monkjavaer.learn.springbootredis;
+package com.monkjavaer.learn.springbootpure;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
-import com.monkjavaer.learn.springbootredis.dto.UserInfo;
-import com.monkjavaer.learn.springbootredis.utils.RedisUtil;
+import com.monkjavaer.learn.springbootpure.dto.UserInfo;
+import com.monkjavaer.learn.springbootpure.utils.RedisUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

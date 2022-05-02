@@ -1,4 +1,4 @@
-package com.monkjavaer.learn.springbootredis.utils;
+package com.monkjavaer.learn.springbootpure.utils;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.BoundListOperations;

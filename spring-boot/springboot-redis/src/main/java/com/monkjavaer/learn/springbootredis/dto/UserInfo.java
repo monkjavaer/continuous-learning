@@ -1,4 +1,4 @@
-package com.monkjavaer.learn.springbootredis.dto;
+package com.monkjavaer.learn.springbootpure.dto;
 
 import lombok.Data;
 

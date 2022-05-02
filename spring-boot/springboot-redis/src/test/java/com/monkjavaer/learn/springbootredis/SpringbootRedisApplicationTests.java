@@ -1,4 +1,4 @@
-package com.monkjavaer.learn.springbootredis;
+package com.monkjavaer.learn.springbootpure;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

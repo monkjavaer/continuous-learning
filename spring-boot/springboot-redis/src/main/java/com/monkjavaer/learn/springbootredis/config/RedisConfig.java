@@ -1,4 +1,4 @@
-package com.monkjavaer.learn.springbootredis.config;
+package com.monkjavaer.learn.springbootpure.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
