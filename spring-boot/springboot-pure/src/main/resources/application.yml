@@ -1,0 +1,11 @@
+spring:
+  redis:
+    database: 0
+    host: 47.105.75.209
+    port: 6379
+    password: 111111
+    connect-timeout: 50000
+
+#jasypt:
+#  encryptor:
+#    password: monkjavaer
